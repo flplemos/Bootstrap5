@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Imagens e Figuras</title>
+</head>
+<body>
+    <div class="container">
+        <img src="img2.png" alt="imagem responsiva" class="img-fluid">
+         <!-- Imagem automaticamente responsiva-->
+    </div>
+    <br>
+    <div class="container">
+        <img src="img2.png" alt="imagem responsiva" class="img-thumbnail">
+        <!-- Imagem com bordas para thumbnail-->
+    </div>
+    <br>
+    <div class="container">
+        <img src="img2.png" alt="imagem responsiva" class="img-fluid img-thumbnail">
+        <!-- Imagem com bordas para thumbnail e responsiva-->
+    </div>
+    <br>
+    <div class="container">
+        <img src="img2.png" alt="imagem responsiva" class="img-fluid rounded">
+        <!-- Imagem sem bordas e arredondada-->
+    </div>
+    <br>
+    <div class="container">
+        <img src="img2.png" alt="imagem responsiva" class="img-thumbnail float-start me-3">
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat, magnam, expedita nihil blanditiis magni quaerat nulla rerum deserunt sit nisi doloremque harum tempora est labore. Dolorum error, voluptatem exercitationem placeat quae earum pariatur velit architecto fuga voluptas nam quidem deserunt quas ipsam omnis, fugiat consectetur. Et sint, eaque iure debitis rem, animi ratione rerum, laboriosam placeat obcaecati officia? Perferendis eligendi eaque maiores molestiae velit sit laudantium eum, nostrum ducimus quisquam earum est fugiat, explicabo corrupti veritatis placeat beatae ratione!</p>
+        <!-- Um texto com uma imagem flutuando a esquerda do texto me = Margem a esquerda-->
+    </div>
+    <br>
+    <div class="container">
+        <img src="img2.png" alt="imagem responsiva" class="rounded float-end ms-3">
+        <p class="lead text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat, magnam, expedita nihil blanditiis magni quaerat nulla rerum deserunt sit nisi doloremque harum tempora est labore. Dolorum error, voluptatem exercitationem placeat quae earum pariatur velit architecto fuga voluptas nam quidem deserunt quas ipsam omnis, fugiat consectetur. Et sint, eaque iure debitis rem, animi ratione rerum, laboriosam placeat obcaecati officia? Perferendis eligendi eaque maiores molestiae velit sit laudantium eum, nostrum ducimus quisquam earum est fugiat, explicabo corrupti veritatis placeat beatae ratione!</p>
+         <!-- Um texto com uma imagem flutuando a direita do texto ms = Margem a direita-->
+    </div>
+    <br>
+    <div class="container text-center">
+        <img src="img2.png" alt="imagem responsiva" class="rounded img-fluid">
+        <!-- Posiciona a imagem no centro da página.text-center-->
+    </div>
+    <br>
+    <div class="container text-center">
+        <figure class="figure">
+            <img src="img2.png" alt="Imagem responsiva" class="img-fluid rounded"><figcaption class="figcaption text-end">Legenda da figura</figcaption>
+             <!-- Adicionando legenda as imagens-->
+        </figure>
+    </div>
+    <br>
+    <div class="container text-center">
+        <figure class="figure">
+            <figcaption class="figcaption text-center">Legenda da figura</figcaption>
+            <img src="img2.png" alt="Imagem responsiva" class="img-fluid rounded">
+             <!-- Adicionando legenda (no topo e centro) as imagens-->
+        </figure>
+    </div>
+    <h3><a href="/Bootstrap5/index.html">Voltar ao inicio.</a></h3>
+</body>
+</html>
