@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <div class="container">
+        <p class="text-start text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis dolorum autem ex delectus error deserunt recusandae incidunt debitis provident quo aliquam minus sequi harum nisi, molestias nobis pariatur tempore!</p>
+        <!-- Tem opção de usar, text-start/end/center 
+        Ainda é possível utilizar breakpoints para configurar o texto em determinadas resoluões: exemplo- text-start / text-sm-end
+        text-nowrap remove a quebra de linha. 
+        text-break faz a palavra ser quebrada na linha
+        text-lowercase faz o texto ficar em minusculas
+        text-uppercase faz o texto ficar em maiusculo
+        text-capitalize faz apenas as primeiras letras ficarem em maiusculo
+        fs-1/2/3/4/5/6 (tamanho da fonte (h1,h2,h3,h4....)
+        -->
+        <br>
+        <div class="container fs-3 text-muted">
+            <p class="fw-bold">Texto com peso negrito</p>
+            <p class="fw-semibold">Texto com peso semi-negrito</p>
+            <p class="fw-normal">Texto com peso normal</p>
+            <p class="fw-light">Texto com peso leve</p>
+            <p class="fst-italic">Texto com estilo ítalico</p>
+            <p class="fst-normal">Texto com estilo normal</p>
+            <!-- lh-1 lh-sm lh-base lh-lg configurações de espaçamento 
+                font-monospace
+            -->
+            <a href="#" class="text-reset text-decoration-none"> Link qualquer</a>
+            <!-- Adquire os elementos do elemento pai 
+                text-decoration-none sem underline
+                text-decoration-underline com underline
+                text-decoration-line-trought riscado
+            -->
+        </div>
+        <br>
+        <div class="container">
+            <p class="lh-lg font-monospace text-truncate">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed eos tenetur facere facilis repudiandae perferendis vero deserunt hic voluptatum, corrupti, nam eaque dolores earum doloribus placeat ab quas minus!
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

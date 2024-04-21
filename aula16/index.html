@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Configurações de visibilidade</title>
+</head>
+<body>
+
+    <header class="p-3 text-bg-dark d-print-none">
+        <!-- Isso quer dizer que em modo de impressão o header não vai ser exibido. -->
+        <div class="container">
+            <h1 class="display-1">Cabeçalho</h1>
+        </div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4">Título do artigo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora neque corporis dicta quas animi labore, optio fuga sit, unde quasi nulla laboriosam at exercitationem quod adipisci, reiciendis amet asperiores minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora neque corporis dicta quas animi labore, optio fuga sit, unde quasi nulla laboriosam at exercitationem quod adipisci, reiciendis amet asperiores minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora neque corporis dicta quas animi labore, optio fuga sit, unde quasi nulla laboriosam at exercitationem quod adipisci, reiciendis amet asperiores minima.</p>
+        <p class="d-none d-print-block">Fonte: meusite.com.br</p>
+        <!-- Dessa forma o p não é mostrado em tela, somente na impressão  -->
+    </article>
+
+
+   
+    <!-- <div class="p-5 bg-danger">
+    </div>
+    <div class="p-4 col-3 d-none d-lg-inline-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-block d-lg-none m-3 bg-success"></div>
+    <div class="p-4 col-3 d-block m-3 bg-warning"></div> -->
+
+    <!-- display do tipo block = elemento do tipo bloco não permitindo elementos ao seu lado  
+    Display inline coloca todos os elementos na mesma linha por nao ser mais um elemento de bloco, não consegue configurar a lasrgura da coluna 
+    porem no inline-block, uma div fica ao lado da outra mas se comprta como bloco
+    também possui variantes responsivas que podem ser uteis para ocultar elementos em diferentes resoluções usando as propriedades de d-none
+    -->
+
+
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <div class="p-4 col-3 m-3 bg-success invisible"></div>
+    <!-- Nesse caso a div não é exibida, mas continua ocupando espaço de renderização  -->
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+
+
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <!-- comando overflow -->
+            <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, expedita cum, rem atque ratione sed, excepturi maxime aliquam reiciendis cumque consequatur. Mollitia recusandae laboriosam adipisci dolore, ipsa nisi qui! Debitis.</div>
+            <!-- Dessa forma a div não transborda pelo container. -->
+            <div class="border p-2 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, expedita cum, rem atque ratione sed, excepturi maxime aliquam reiciendis cumque consequatur. Mollitia recusandae laboriosam adipisci dolore, ipsa nisi qui! Debitis.</div>
+            <!-- Oculta o conteúdo que estava transbordando  -->
+            <div class="border p-2 col-3 overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, expedita cum, rem atque ratione sed, excepturi maxime aliquam reiciendis cumque consequatur. Mollitia recusandae laboriosam adipisci dolore, ipsa nisi qui! Debitis.</div>
+            <!-- Configuração de overflow padrão, transborda pela div.  -->
+            <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, expedita cum, rem atque ratione sed, excepturi maxime aliquam reiciendis cumque consequatur. Mollitia recusandae laboriosam adipisci dolore, ipsa nisi qui! Debitis.</div>
+            <!-- Coloca barra de roolagem vertical e lateral, desas foram barras de rolagem sempre estarão visiveis  -->
+        </div>
+    </div>
+</body>
+</html>
