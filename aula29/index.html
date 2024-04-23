@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Carrosséis de slides</title>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="ads" >
+
+            <!-- Para criar um carrosel de imagens, primeiramente, crie uma div com a class carousel slide, e com o atributo data-bs-ride="carousel", o id é o target; A class carousel-fade, adiciona um fade entre as imagens, a padrão é deslizante, a class carousel-dark, ativa o dark mode -->
+
+            <div class="carousel-indicators">
+                <!--Para criar os botões que indicam qual imagem está sendo exibida, crie essa div carousel-indicators dentro do carousel slide, com a quantidade de botões de acordo com a quantidade de imagens, use as classes, e não esquecer do target. No data-bs-slide-to, coloque o número de acordo com a ordem das imagens. A classe active apenas no elemento que está ativo no carousel-iner -->
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+            <!-- Coloca uma div dentro, com a class carousel-inner, que será a div que vai conter as imagens em si -->
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <!-- Cada imagem é uma div com a class carousel-item, o atributo active, é para imagem que será exibida em primeiro / Data-bs-interval é opcional, configura o tempo de exibição, nessa imagem no caso, 3 segundos.  -->
+                    <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100">
+
+                    <div class="carousel-caption d-none d-md-block">
+                    <!-- Essa div cria um Título e um paragrafo dentro da imagem do primeiro slide. A mensagem só aparece em resoluções md, na resolução padrão é d-none -->
+                        <h5>Título do Slide 1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facilis aspernatur necessitatibus corrupti eaque iure alias maxime quia architecto sequi quasi officia, ab quo molestiae exercitationem dolores animi voluptatum accusantium?</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100">
+                </div>
+
+            </div>
+
+            <div> 
+                <!-- Esses botões não precisam necessariamente estarem envolvidos em uma div -->
+                <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <!-- Essa é a criação do botão para retroceder no slide, um botão com classe crousel-control-prev, um data-bs-target com alvo a escolha, e o atributo data-bs-slide="prev" e dentro do button, um span com class="carousel-control-prev-icon"é nescessário, adicionar um id na div carousel slide, com o nome do target escolhido -->
+                <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                <!-- Para criar o botão de avançar, mesmo esquema, só troca o prev por next. -->
+            </div>
+        </div>
+        <h3><a href="/Bootstrap5/index.html">Voltar ao inicio.</a></h3>
+    </div>
+</body>
+</html>
